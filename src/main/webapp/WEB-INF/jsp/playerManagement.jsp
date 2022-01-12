@@ -28,7 +28,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
      <link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
   </head>
-  <body data-ng-app="myApp">
+  <body data-ng-app="myApp" class="ng-cloak">
       <div class="generic-container" data-ng-controller="PlayerController as ctrl">
           <div class="panel panel-default">
               <div class="panel-heading"><span class="lead">Player Registration Form </span></div>
@@ -64,18 +64,6 @@
                               <label class="col-md-2 control-lable" for="description">Description</label>
                               <div class="col-md-7">
                                   <input type="text" data-ng-model="ctrl.player.description" id="description" class="description form-control input-sm" placeholder="Enter player description" required/>
-                                  <div class="has-error" data-ng-show="myForm.$dirty">
-                                      <span data-ng-show="myForm.description.$error.required">This is a required field</span>
-                                      <span data-ng-show="myForm.description.$invalid">This field is invalid </span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                       <div class="row">
-                          <div class="form-group col-md-12">
-                              <label class="col-md-2 control-lable" for="ppg">PPG</label>
-                              <div class="col-md-7">
-                                  <input type="number" data-ng-model="ctrl.player.ppg" id="description" class="description form-control input-sm" placeholder="Enter player points per game" required/>
                                   <div class="has-error" data-ng-show="myForm.$dirty">
                                       <span data-ng-show="myForm.description.$error.required">This is a required field</span>
                                       <span data-ng-show="myForm.description.$invalid">This field is invalid </span>

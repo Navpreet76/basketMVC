@@ -30,4 +30,9 @@ public class HomeController {
 	public String displayFormSubmit() {
 		return "form_process";
 	}
+	
+	@RequestMapping("/playermanagement")
+	public String displayPlayerManagement() {
+		return "playerManagement";
+	}
 }
